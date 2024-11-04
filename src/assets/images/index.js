@@ -4,7 +4,7 @@ import bannerImgOne from "./banner/bannerImgOne.webp";
 import bannerImgTwo from "./banner/bannerImgTwo.webp";
 import bannerImgThree from "./banner/bannerImgThree.webp";
 import saleImgOne from "./sale/saleImgOne.webp";
-import saleImgTwo from "./sale/saleImgTwo.webp";
+import saleImgTwo from "./sale/pexels-pixabay-290660.jpg";
 import saleImgThree from "./sale/saleImgThree.webp";
 // ============== Products Start here ====================
 // New Arrivals
