@@ -29,7 +29,15 @@ export const navBarList = [
     _id: 1003,
     title: "Acerca",
     link: "/about",
+  
+    
   },
+  {
+    _id: 1004,
+    title: "Contacto",
+    link: "/contact",
+  },
+  
   
  
 ];
@@ -38,36 +46,36 @@ export const SplOfferData = [
   {
     _id: "201",
     img: spfOne,
-    productName: "Cap for Boys",
-    price: "35.00",
-    color: "Blank and White",
+    productName: "Gorra",
+    price: "35.000",
+    color: "Blanco y negro",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
   },
   {
     _id: "202",
     img: newArrFour,
-    productName: "Tea Table",
-    price: "180.00",
-    color: "Gray",
+    productName: "Tabla",
+    price: "180.000",
+    color: "Gris",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
   },
   {
     _id: "203",
     img: spfThree,
-    productName: "Headphones",
-    price: "25.00",
-    color: "Mixed",
+    productName: "Audifonos",
+    price: "25.000",
+    color: "Varios",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
   },
   {
     _id: "204",
     img: spfFour,
-    productName: "Sun glasses",
-    price: "220.00",
-    color: "Black",
+    productName: "Lentes",
+    price: "220.000",
+    color: "Negros",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
   },
