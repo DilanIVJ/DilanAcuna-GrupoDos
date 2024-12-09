@@ -13,11 +13,11 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [messages, setMessages] = useState("");
 
-  // ========== Error Messages Start here ============
+ 
   const [errClientName, setErrClientName] = useState("");
   const [errEmail, setErrEmail] = useState("");
   const [errMessages, setErrMessages] = useState("");
-  // ========== Error Messages End here ==============
+ 
   const [successMsg, setSuccessMsg] = useState("");
 
   const handleName = (e) => {
@@ -33,32 +33,31 @@ const Contact = () => {
     setErrMessages("");
   };
 
-  // ================= Email Validation start here =============
+ 
   const EmailValidation = (email) => {
     return String(email)
       .toLowerCase()
       .match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
   };
-  // ================= Email Validation End here ===============
-
+ 
   const handlePost = (e) => {
     e.preventDefault();
     if (!clientName) {
-      setErrClientName("Enter your Name");
+      setErrClientName("nombre");
     }
     if (!email) {
-      setErrEmail("Enter your Email");
+      setErrEmail("correo");
     } else {
       if (!EmailValidation(email)) {
         setErrEmail("Enter a Valid Email");
       }
     }
     if (!messages) {
-      setErrMessages("Enter your Messages");
+      setErrMessages("ingrese sus mensajes");
     }
     if (clientName && email && EmailValidation(email) && messages) {
       setSuccessMsg(
-        `Thank you dear ${clientName}, Your messages has been received successfully. Futher details will sent to you by your email at ${email}.`
+        `gracias ${clientName}, sus mensajes fueron recibidos ${email}.`
       );
     }
   };
@@ -83,7 +82,7 @@ const Contact = () => {
                 value={clientName}
                 className="w-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
                 type="text"
-                placeholder="Enter your name here"
+                placeholder="ingrese"
               />
               {errClientName && (
                 <p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
@@ -101,7 +100,7 @@ const Contact = () => {
                 value={email}
                 className="w-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
                 type="email"
-                placeholder="Enter your name here"
+                placeholder="ingrese"
               />
               {errEmail && (
                 <p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
@@ -121,7 +120,7 @@ const Contact = () => {
                 rows="3"
                 className="w-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor resize-none"
                 type="text"
-                placeholder="Enter your name here"
+                placeholder="ingrese"
               ></textarea>
               {errMessages && (
                 <p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
